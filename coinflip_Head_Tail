@@ -1,0 +1,13 @@
+#! /bin/bash -x
+
+HEAD=1
+
+coinflip=$((RANDOM%2))
+echo $coinflip
+
+if [ $coinflip -eq $HEAD ]
+then
+        echo "HEADS"
+else
+        echo "TAILS"
+fi
